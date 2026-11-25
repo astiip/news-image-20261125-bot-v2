@@ -134,8 +134,8 @@ STORIES = [
      "date": "SUN 22 NOV", "day": "SUN", "short": "Istanbul"},
     {"n": 28, "title": "El Chapo Isidro captured in Jalisco",
      "date": "FRI 20 NOV", "day": "FRI", "short": "El Chapo"},
-    {"n": 29, "title": "US jobless rate falls to 4.4%", "date": "FRI 20 NOV",
-     "day": "FRI", "short": "US jobless 4.4%"},
+    {"n": 29, "title": "Sanofi to buy Insmed for $41bn", "date": "TUE 24 NOV",
+     "day": "TUE", "short": "Sanofi–Insmed $41bn"},
     {"n": 30, "title": "Anthropic makes record IPO debut",
      "date": "FRI 20 NOV", "day": "FRI", "short": "Anthropic IPO"},
     {"n": 31, "title": "Sunrise on the Reaping tops box office",
@@ -160,10 +160,12 @@ TIMELINE = [
                     "Liverpool 4–0 Man Utd", "Kushner floats NATO-like vow"]),
     ("MON 23 NOV", ["Huang returns to Nvidia", "Russian missiles enter Poland",
                     "India, NZ draw Test"]),
-    ("WED 25 NOV", ["Hormuz mines lift oil past $91",
-                    "700,000 Russian dead in new count",
+    ("TUE 24 NOV", ["Houthi drone hits Riyadh tower",
                     "Banten toll confirmed at 26",
-                    "Houthi drone hits Riyadh tower"]),
+                    "Huawei convicted in US trial",
+                    "NATO sends jets to Poland"]),
+    ("WED 25 NOV", ["Hormuz mines lift oil past $91",
+                    "700,000 Russian dead in new count"]),
 ]
 
 # Pins: (story number, place, lon, lat). London/Paris nudged a little
@@ -538,7 +540,7 @@ def build():
     d.text((MARGIN, 521), "SATURDAY → WEDNESDAY", font=F(SANS_B, 12),
            fill=NAVY)
     rule(d, MARGIN, 535, W - 2 * MARGIN)
-    col_w = (W - 2 * MARGIN) / 4
+    col_w = (W - 2 * MARGIN) / 5
     for ci, (day, items) in enumerate(TIMELINE):
         cx = MARGIN + col_w * ci
         color = RED if day.startswith("WED") else NAVY

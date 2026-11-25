@@ -21,7 +21,7 @@ from PIL import Image
 
 import render
 
-EXPECTED_COUNTS = {"TUE": 16, "MON": 3, "SUN": 7, "SAT": 1, "FRI": 3}
+EXPECTED_COUNTS = {"TUE": 17, "MON": 3, "SUN": 7, "SAT": 1, "FRI": 2}
 EXPECTED_STATS = ["$91.40", "700,000", "26", "11", "+31.5%", "185"]
 
 
